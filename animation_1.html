@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes loading_animation_1 {
+            0% {background-image: linear-gradient(to right,gainsboro,lightgrey,lightgrey,lightgrey,lightgrey);}
+            10% {background-image: linear-gradient(to right,lightgrey,gainsboro,lightgrey,lightgrey,lightgrey);}
+            20% {background-image: linear-gradient(to right,lightgrey,lightgrey, gainsboro,lightgrey,lightgrey);}
+            30% {background-image: linear-gradient(to right,lightgrey,lightgrey,lightgrey, gainsboro,lightgrey);}
+            40% {background-image: linear-gradient(to right,lightgrey,lightgrey,lightgrey,lightgrey, gainsboro);}
+            50% {background-image: linear-gradient(to right,lightgrey,lightgrey,lightgrey,lightgrey, lightgrey);}
+            100% {background-image: linear-gradient(to right,gainsboro,lightgrey,lightgrey,lightgrey,lightgrey);}
+        }
+
+        @keyframes loading_animation_2 {
+            0% {background-color:lightgrey}
+            50% {background-color:darkgrey}
+            100% {background-color:lightgrey}
+        }
+    </style>
+</head>
+<body>
+
+    <div style="max-width:500px;height:300px;margin: 100px auto 100px auto;animation-name:loading_animation_1;animation-duration:1s;animation-iteration-count: infinite;">
+    </div>
+
+    <div style="max-width:500px;height:300px;margin: 100px auto 100px auto;animation-name:loading_animation_2;animation-duration:1s;animation-iteration-count: infinite;">
+    </div>
+    
+</body>
+</html>
